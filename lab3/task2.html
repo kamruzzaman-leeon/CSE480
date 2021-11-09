@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task2</title>
+    <style>
+        body{
+            text-align:center;
+            margin-left:auto; margin-right:auto;
+        }
+        .div1 {
+            border: 5px solid black;
+            width: 80%;
+            padding: 2px;
+            color: yellow;
+        }
+
+        .div2 {
+            background-color: orange;
+            text-align: left;
+            border-bottom: 2px solid white;
+            padding: 10px;
+            color: yellow;
+        }
+
+        .div3 {
+            background-color: orange;
+            text-align: right;
+            border-top: 2px solid white;
+            padding: 10px;
+        }
+
+        .canbtn {
+            background-color: rgb(212, 2, 2);
+            color: white;
+            padding: 10px 20px;
+            border: 0px;
+            border-radius: 4px;
+            margin: 0px 5px;
+        }
+
+        .subbtn {
+            background-color: rgb(9, 212, 2);
+            color: white;
+            padding: 10px 20px;
+            border: 0px;
+            border-radius: 4px;
+            margin: 0px 5px;
+        }
+
+        table {
+
+            background-color: rgb(36, 49, 70);
+            width: 100%;
+            text-align: right;
+            padding-inline: 5px;
+
+        }
+
+  
+        td {
+            
+            padding: 10px;
+            text-align: left;
+            border-radius: 5px;
+            
+
+        }
+
+        td:nth-child(1) {
+            text-align: right;
+        }
+
+        .in {
+            border: 0px;
+            width: 98%;
+            height: 28px;
+            padding: 1px;
+        }
+
+        ::placeholder {
+            padding-inline: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="div1">
+            <div class="div2">Sign Up</div>
+            <div>
+                <table>
+                    <tr>
+                        <td>First name</td>
+                        <td colspan="3">
+                            <input class="in" type="text" name="fname" id="fname" placeholder="Enter First Name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Last name</td>
+                        <td colspan="3">
+                            <input class="in" type="text" name="lname" id="lname" placeholder="Enter Last Name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Screen name</td>
+                        <td colspan="3">
+                            <input class="in" type="text" name="Sname" id="Sname" placeholder="Enter Screen Name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td>
+                            <select class="in" name="month" id="month">
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="in" name="day" id="day">
+                                <option value="1">1</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="in" name="year" id="year">
+                                <option value="1985">1985</option>
+                                <option value="1986">1986</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td style="width: 40%;">
+                            <input type="radio" name="gender" id="gender" value="Male" />Male
+                            <input type="radio" name="gender" id="gender" value="Female" />Female
+                        </td>
+
+                        
+
+                    </tr>
+                    <tr>
+                        <td>Country</td>
+                        <td colspan="3">
+                            <select class="in" name="Country" id="Country">
+                                <option value="USA">USA</option>
+                                <option value="BD">Bangladesh</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td colspan="3">
+                            <input class="in" type="email" name="email" id="email" placeholder="Enter E-mail..." />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td colspan="3">
+                            <input class="in" type="text" name="phone" id="phone" pattern="[0-9]" maxlength="13"
+                                placeholder="Enter Phone..." />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td colspan="3">
+                            <input class="in" type="password" name="password" id="password" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Confirm Password</td>
+                        <td colspan="3">
+
+                            <input class="in" type="password" name="Cpassword" id="Cpassword" />
+                        </td>
+                    </tr>
+                    <tr>
+                       <td></td>
+                        <td>
+                            <input type="checkbox" name="agree" id="agree" required />I
+                            agree to the terms of Use
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="div3">
+                <button type="submit" class="subbtn">Submit</button>
+                <button class="canbtn">Cancel</button>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>

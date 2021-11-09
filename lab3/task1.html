@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <style>
+        div {
+            
+            padding: 5px;
+            width: 80%
+        }
+        ::placeholder{
+            color: red;
+            
+        }
+
+       
+        label{
+            display: inline-block;
+            text-align: Right;
+            width: 100px;
+            padding-right: 5px;
+        }
+       h2{
+           margin-right: 20%;
+       }
+    
+       
+    </style>
+</head>
+
+<body>
+    
+        <div>
+            <form action="#" style="border: 5px solid black; ; padding: 5px; width: 70%">
+            <h2>Registration form</h2>
+
+                <p>
+                    <label for="ID">User id:</label>
+                    <input type="text" name="ID" id="ID" size="12" maxlength="12" required>
+                    
+                </p>
+
+                <p>
+                    <label for="PASSWORD">Password:</label>
+                    <input type="password" name="Password" id="PASSWORD" maxlength="12" size="12" required>
+
+                </p>
+                <p>
+                    <label for="NAME">Name:</label>
+                    <input type="text" size="40" name="NAME" id="NAME" pattern="[A-Za-z]+" required>
+                </p>
+                <p>
+                    <label for="ADDRESS">Address:</label>
+                    <input type="text" size="40" name="ADDRESS" id="ADDRESS">
+                </p>
+                <p>
+                    <label for="COUNTRY">Country:</label>
+                    <select name="Country" id="COUNTRY" required>
+                        <option value=""disabled selected hidden>(please select a country)</option>
+                        <option value="BD">Bangladesh</option>
+                        <option value="IN">India</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="ZIPCODE">ZIP Code:</label>
+                    <input type="number" name="ZIPCODE" id="ZIPCODE" required>
+                </p>
+                <p>
+                    <label for="EMAIL">Email:</label>
+                    <input type="email" name="EMAIL" id="EMAIL" required>
+                </p>
+                <p>
+                    <label for="SEX">Sex:</label>
+                    <input type="radio" name="SEX" id="SEX" value="Male">Male
+                    <input type="radio" name="SEX" id="SEX" value="Female">Female
+                </p>
+                <p>
+                    <label for="LANGUAGE">Language:</label>
+                    <input type="checkbox" name="LANGUAGE" id="LANGUAGE" checked>English
+                    <input type="checkbox" name="LANGUAGE" id="LANGUAGE">Non English
+                </p>
+                <p>
+                    <label for="ABOUT" style="float: left;">About:</label>
+                    <textarea name="ABOUT" id="" cols="30" rows="10"></textarea>
+                
+
+                <p style="text-align: center;"><button type="submit">Submit</button></p>
+                
+            </form>
+        </div>
+    
+</body>
+
+</html>
